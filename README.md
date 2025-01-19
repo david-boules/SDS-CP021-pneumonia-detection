@@ -1,40 +1,74 @@
 # Welcome to the SuperDataScience Community Project!
-Welcome to the --project name-- repository! 🎉
+Welcome to the Medical X-Ray Imaging: Pneumonia Detection repository! 🎉
 
 This project is a collaborative initiative brought to you by SuperDataScience, a thriving community dedicated to advancing the fields of data science, machine learning, and AI. We are excited to have you join us in this journey of learning, experimentation, and growth.
 
-# Project Scope of Works:
+# Project Scope of Works
 
 ## Project Overview
-
+This project involves building a convolutional neural network (CNN) to classify medical X-ray images and detect pneumonia. Targeted at beginner to intermediate-level data scientists, the project will focus on leveraging deep learning techniques to develop a robust classification model. The final model will be deployed using Streamlit, providing a user-friendly interface for real-time predictions.
 
 ## Project Objectives
 
+### Dataset Acquisition and Preprocessing:
+- Use the publicly available dataset of X-ray images for model training.
+- Perform data preprocessing, including resizing, normalization, and augmentation, to prepare the images for training.
 
-## Project Deliverables
+### Model Development:
+- Build a convolutional neural network (CNN) using deep learning frameworks such as TensorFlow or PyTorch.
+- Train and evaluate the model to classify X-ray images as normal or pneumonia.
 
+### Model Deployment:
+- Develop a Streamlit application to allow users to upload X-ray images and receive a prediction.
+- Include visualization of prediction confidence and model explanation (e.g., Grad-CAM).
 
 ## Technical Requirements
 
+### Tools and Libraries:
+- **Dataset Handling**: Pandas, NumPy.
+- **Deep Learning Frameworks**: TensorFlow or PyTorch.
+- **Image Processing**: OpenCV, Pillow.
+- **Model Deployment**: Streamlit.
+
+### Environment:
+- Python 3.8+
+- Libraries: 
+  - `tensorflow`, `pytorch`, `pandas`, `numpy`, `opencv-python`, `pillow`, `streamlit`, `matplotlib`.
 
 ## Workflow
 
-### **Phase 1:**
+### Phase 1: Setup (1 Week)
+- Setup GitHub repo and project folders.
+- Setup virtual environment and respective libraries.
 
-### **Phase 2:**
+### Phase 2: Dataset Acquisition and Preprocessing (1 Week)
+- Download the chest X-ray dataset from a trusted source (e.g., Kaggle).
+- Explore and preprocess the dataset:
+  - Resize images to a uniform size.
+  - Normalize pixel values for faster model convergence.
+  - Perform data augmentation to improve model generalization.
 
-### **Phase 3:**
+### Phase 3: Model Development (1 Week)
+- Design a CNN architecture tailored for image classification.
+- Train the model on the dataset with proper validation.
+- Evaluate the model's performance using metrics like accuracy, precision, recall, and F1-score.
+- Fine-tune the model for optimal performance.
 
-### **Phase 4:**
+### Phase 4: Model Deployment (1 Week)
+- Build a Streamlit app to:
+  - Allow users to upload X-ray images.
+  - Display the model's predictions (Normal or Pneumonia).
+  - Provide additional insights using Grad-CAM visualizations for explainability.
 
 ## Timeline
 
-| **Phase**  | **Task**                    | **Duration** |
-|------------|-----------------------------|--------------|
-| **Phase 1**: Setup |                     |  Week 1      |
-| **Phase 2**: Backend |                   |  Week 2      |
-| **Phase 3**: Frontend |                  |  Week 3      |
-| **Phase 4**: Deployment |                |  Week 4      |
+| Phase                     | Task                                      | Duration |
+|---------------------------|-------------------------------------------|----------|
+| Phase 1: Setup             | Setup GitHub repo and project folder     | Week 1   |
+| Phase 2: Dataset           | Acquire and preprocess data              | Week 2   |
+| Phase 3: Model Development | Design, train, and evaluate CNN          | Week 3   |
+| Phase 4: Model Deployment  | Build and deploy Streamlit app           | Week 4   |
+
 
 # Getting Started
 
