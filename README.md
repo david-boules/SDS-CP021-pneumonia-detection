@@ -14,6 +14,8 @@ This project involves building a convolutional neural network (CNN) to classify 
 - Use the publicly available dataset of X-ray images for model training.
 - Perform data preprocessing, including resizing, normalization, and augmentation, to prepare the images for training.
 
+Link to dataset: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+
 ### Model Development:
 - Build a convolutional neural network (CNN) using deep learning frameworks such as TensorFlow or PyTorch.
 - Train and evaluate the model to classify X-ray images as normal or pneumonia.
