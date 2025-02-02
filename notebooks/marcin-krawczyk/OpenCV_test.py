@@ -18,4 +18,6 @@ cv2.waitKey(0)  # 0 oznacza, że program czeka na dowolny klawisz, aby zamknąć
 
 # Zamknięcie wszystkich okien
 cv2.destroyAllWindows()
+# test
+
 
