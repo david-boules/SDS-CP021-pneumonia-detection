@@ -1,6 +1,8 @@
 # Include any files you want to ignore (do not want to push to GitHub)
 .ipynb_checkpoints
-.DS_Store
-**/py-3.10.11/
-data/
-.venv/
+README.md
+py-3.10.11/
+web-app/shaheer-airaj/
+requirements.txt
+notebooks/shaheer-airaj/
+
