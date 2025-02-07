@@ -1,3 +1,7 @@
 # Include any files you want to ignore (do not want to push to GitHub)
 .ipynb_checkpoints
 py-3.10.11/
+tuned_resnet50_model.h5
+venv/
+tuned_resnet50_model.tflite
+README.md
