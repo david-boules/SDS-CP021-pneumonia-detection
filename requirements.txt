@@ -1,1 +1,13 @@
 # Contains all libraries that are needed for this project
+tensorflow
+torch
+pandas
+numpy
+opencv-python
+pillow
+streamlit
+matplotlib
+keras-preprocessing
+keras
+scipy
+joblib
