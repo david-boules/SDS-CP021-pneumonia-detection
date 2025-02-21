@@ -14,9 +14,6 @@ MODEL_PATH = os.path.join(BASE_DIR, "model.keras")
 
 model = load_model(MODEL_PATH)
 
-
-model = load_model("model.keras")
-
 image = st.file_uploader("Upload a Chest X-Ray Image", type=["png", "jpg", "jpeg"])
 
 def image_preprocessing(image):
