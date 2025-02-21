@@ -136,7 +136,6 @@ with gr.Blocks(theme=gr.themes.Citrus(), fill_height=True) as app:
       upload_image = gr.Image(type='pil', width=224, height=224)
       predict_btn = gr.Button('Detect')
     with gr.Column(scale=2):
-      gr.Image()
       output_prediction = gr.Label(label='Prediction')
   predict_btn.click(fn=classify_images, inputs=upload_image, outputs=output_prediction, api_name='prediction')
 
