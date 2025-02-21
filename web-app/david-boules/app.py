@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import tensorflow as tf
 import numpy as np
@@ -7,6 +8,12 @@ from tensorflow.keras.preprocessing.image import img_to_array, load_img
 from PIL import Image
 
 st.title("Medical X-Ray Imaging - Pneumonia Detection")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model.keras")
+
+model = load_model(MODEL_PATH)
+
 
 model = load_model("model.keras")
 
