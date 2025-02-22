@@ -11,8 +11,8 @@ from tf_keras_vis.gradcam import Gradcam
 from tf_keras_vis.utils.model_modifiers import ReplaceToLinear
 from tf_keras_vis.utils.scores import BinaryScore
 
-# AWS S3 details
-BUCKET_NAME = "pneumonia-models"  # Replace with your S3 bucket name
+
+BUCKET_NAME = "pneumonia-models" 
 MODEL_PATH = "model.h5"
 LOCAL_MODEL_PATH = "model.h5"
 
