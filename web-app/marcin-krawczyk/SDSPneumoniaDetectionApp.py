@@ -10,7 +10,7 @@ import requests
 
 
 # parameters
-xysize = 64
+xysize = 128
 predictin_threshold = 0.7
 # MODEL_URL = "https://drive.google.com/file/d/1uc6dMUxBSNqAAXLZzLBy0GG7vUAOzNGS/view?usp=drive_link"
 
@@ -54,7 +54,7 @@ class BasicCNNV2(nn.Module):
 
 # Load model
 model = BasicCNNV2()
-model.load_state_dict(torch.load("./web-app/marcin-krawczyk/model.pth", map_location=device))
+model.load_state_dict(torch.load("web-app/marcin-krawczyk/model128px25e.pth", map_location=device))
 # model_weights_path = download_file(MODEL_URL)
 # state_dict = torch.load(model_weights_path, map_location=torch.device("cpu"), weights_only=True)
 # model.load_state_dict(state_dict)
@@ -92,7 +92,7 @@ https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia and augme
 The model takes grayscale images as an input and returns a diagnosis along with a probability value. """
 st.sidebar.write(project_description)
 
-image = Image.open("./web-app/marcin-krawczyk/results.jpg")
+image = Image.open("web-app/marcin-krawczyk/results.jpg")
 st.sidebar.image(image, use_container_width=True)
 
 st.markdown("<h1 style='text-align: center;'>Pneumonia detection</h1>", unsafe_allow_html=True)
@@ -122,14 +122,6 @@ if uploaded_file is not None:
         st.markdown(f"<h3 style='text-align: center; color: green;'>No pneumonia with probability {(1-probability)*100:.1f}%</h3>", unsafe_allow_html=True)
 
 
-
-
-    # result = "Probable pneumonia" if probability > predictin_threshold else "Brak zapalenia płuc"
-    
-    # st.write(f"### {result}")
-    # st.write(f"**Prawdopodobieństwo:** {probability*100:.1f}%")
-
-    # st.markdown("This is black and :red[this is red!]")
 
 
 
