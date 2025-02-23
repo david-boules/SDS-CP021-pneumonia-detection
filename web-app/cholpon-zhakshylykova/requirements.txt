@@ -1,11 +1,5 @@
-import streamlit as st
-import torch
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torchvision import datasets, transforms
-from torch.utils.data import DataLoader
-from PIL import Image
-import os
-import random
-import matplotlib.pyplot as plt
+streamlit
+torch
+torchvision
+pillow
+matplotlib

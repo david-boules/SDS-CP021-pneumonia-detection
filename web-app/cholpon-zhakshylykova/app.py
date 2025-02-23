@@ -53,7 +53,8 @@ class CNNClassifierGrayscale(nn.Module):
 
 # Load the trained model
 model = CNNClassifierGrayscale().to(device)
-model.load_state_dict(torch.load("model.pth", map_location=device))
+model.load_state_dict(torch.load("/Users/cholponzhakshylykova/Desktop/SDS/SDS-CP021-pneumonia-detection/web-app/cholpon-zhakshylykova/model.pth", map_location=device))
+
 model.eval()
 
 # Function to predict image
