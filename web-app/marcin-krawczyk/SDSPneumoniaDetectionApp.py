@@ -10,7 +10,7 @@ import requests
 
 
 # parameters
-xysize = 128
+xysize = 64
 predictin_threshold = 0.7
 # MODEL_URL = "https://drive.google.com/file/d/1uc6dMUxBSNqAAXLZzLBy0GG7vUAOzNGS/view?usp=drive_link"
 
@@ -54,7 +54,7 @@ class BasicCNNV2(nn.Module):
 
 # Load model
 model = BasicCNNV2()
-model.load_state_dict(torch.load("model128px25e.pth", map_location=device))
+model.load_state_dict(torch.load("model.pth", map_location=device))
 # model_weights_path = download_file(MODEL_URL)
 # state_dict = torch.load(model_weights_path, map_location=torch.device("cpu"), weights_only=True)
 # model.load_state_dict(state_dict)
