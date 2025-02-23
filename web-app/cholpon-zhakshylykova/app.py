@@ -69,13 +69,24 @@ def predict_image(image_path, model, device):
     return predicted_label, confidence_score.item()
 
 # Streamlit UI
-st.title("Pneumonia Detection Using CNN")
+st.set_page_config(layout="centered")
+st.title("⚕️ Pneumonia Detection Using CNN")
+
+# Sidebar Information
+st.sidebar.title("📌 About this Project")
+st.sidebar.write(
+    "### 🌍 A Collaborative Effort"
+    "\nThis project is a collaborative initiative brought to you by **SuperDataScience**, a thriving community dedicated "
+    "to advancing the fields of data science, machine learning, and AI."
+    "\n\n### 🔬 Project Overview"
+    "\nWe have built a **Convolutional Neural Network (CNN)** model to classify medical X-ray images and detect pneumonia."
+)
 
 # File uploader
 uploaded_file = st.file_uploader("Upload a Chest X-ray Image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file:
-    st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+    st.image(uploaded_file, caption=" Uploaded Image", width=300)
     
     # Save uploaded file
     with open("temp.jpg", "wb") as f:
@@ -83,5 +94,5 @@ if uploaded_file:
 
     # Predict
     predicted_class, confidence = predict_image("temp.jpg", model, device)
-    st.write(f"### Prediction: {predicted_class}")
-    st.write(f"Confidence Score: {confidence:.4f}")
+    st.write(f"### Prediction: **{predicted_class}**")
+    st.write(f" Confidence Score: **{confidence:.4f}**")
