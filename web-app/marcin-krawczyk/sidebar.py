@@ -21,7 +21,7 @@ https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia and augme
 The model takes grayscale images as an input and returns a diagnosis along with a probability value. """
 st.sidebar.write(project_description)
 
-image = Image.open("/web-app/marcin-krawczyk/results.jpg")
+image = Image.open("web-app/marcin-krawczyk/results.jpg")
 st.sidebar.image(image, use_container_width=True)
 
 st.markdown("<h1 style='text-align: center;'>Pneumonia detection</h1>", unsafe_allow_html=True)
